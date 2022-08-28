@@ -1,0 +1,14 @@
+.logo {
+  @extend %logo;
+  margin-right: 93px;
+  padding: 15px 0px;
+}
+.footer__logo {
+  @extend %logo;
+}
+.studio {
+  color: #000000;
+}
+.footer__studio {
+  color: $white;
+}

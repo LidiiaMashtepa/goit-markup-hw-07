@@ -1,0 +1,70 @@
+.team {
+  background: #f5f4fa;
+}
+.team__title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-color;
+  margin-bottom: 50px;
+}
+.team__pic {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.team__list {
+  display: flex;
+  column-gap: 30px;
+}
+.team__item {
+  background: $white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team__subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-color;
+  margin-bottom: 10px;
+}
+.team__desc {
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+.team-soc {
+  @extend %flex-center;
+  column-gap: 10px;
+}
+.team-soc__link {
+  @extend %flex-center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  transition-property: background-color;
+  @extend %animated;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+.team-soc__svg {
+  fill: #afb1b8;
+  transition-property: fill;
+  @extend %animated;
+  .team-soc__link:hover &,
+  .team-soc__link:focus & {
+    fill: $white;
+  }
+}
+
+.team__card {
+  padding: 30px 0px;
+}
